@@ -1,0 +1,63 @@
+.splash-nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    .welcome {
+        padding: 5px 10px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: cursive;
+    }
+    .login-button {
+        height: fit-content;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: cursive;
+        &:hover {
+            color: #f8b636;
+            border-top: 5px solid #f8b636;
+        }
+    }
+}
+
+.login-component {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    form.login-form {
+        padding: 5px 10px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: cursive;
+        input[type=text],input[type=password]  {
+            margin: 10px;
+            padding: 5px 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            text-align: left;
+            &:focus {
+                box-shadow: 2px 2px 2px 2px #aa7815;
+            }
+        }
+    }
+    .login-button {
+        height: fit-content;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: cursive;
+        &:hover {
+            color: #f8b636;
+            border-top: 3px solid #f8b636;
+        }
+    }
+}
+
+
+
+
+

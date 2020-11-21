@@ -1,0 +1,17 @@
+div.footer{
+    position: sticky;
+    bottom: 0;
+    background: linear-gradient(to top right, #f8b636 0%, #ffffff 100%);
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    font-size: 20px;
+    font-family: cursive;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        li{
+            margin: 0 10px;
+        }
+    }
+}

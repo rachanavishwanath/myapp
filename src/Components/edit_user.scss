@@ -1,0 +1,73 @@
+div.edit-user {
+    background-color: #f8b636;
+    h1 {
+        font-size: 25px;
+        font-weight: bold;
+        font-family: cursive;
+    }
+    form.edit-user-form {
+        margin: 10px;
+        padding: 5px 10px;
+        font-size: 20px;
+        text-align: left;
+        font-family: cursive;
+        height: 100vh;
+        div.edit-name {
+            display: flex;
+            justify-content: flex-start;
+        }
+        div.edit-address {
+            display: flex;
+            flex-direction: column;
+        }
+        input[type=text] {
+                margin: 10px;
+                padding-left: 10px;
+                border: 1px solid black;
+                border-radius: 5px;
+                &:focus {
+                    box-shadow: 2px 2px 2px 2px #aa7815;
+                }
+        }
+        div.footer-buttons {
+            margin: 10px;
+        }
+        button {
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-right: 20px;
+            color: white;
+            border: 1px solid white;
+            padding: 5px 10px;
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+        
+    }
+}
+div.react-modal {
+    padding: 0 50px;
+    background-color: #f8b636;
+    h3.h3-modal {
+        font-size: 25px;
+        font-weight: bold;
+        font-family: cursive;
+    }
+    div.footer-buttons {
+        margin: 10px;
+    }
+    button.login-button {
+            height: fit-content;
+            padding: 0 10px;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: cursive;
+            &:hover {
+                color: white;
+                border-top: 3px solid white;
+            }
+        }
+}

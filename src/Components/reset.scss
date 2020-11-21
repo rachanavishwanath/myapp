@@ -1,0 +1,27 @@
+html, body, div, h1, button, input, ul, li, h2, p, h3, label, a
+  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    color: inherit;
+    text-align: inherit;
+    text-decoration: inherit;
+    vertical-align: inherit;
+    box-sizing: inherit;
+    background: transparent;
+    resize: none;
+    list-style: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1.title{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+button {
+  cursor: pointer;
+}

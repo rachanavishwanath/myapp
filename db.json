@@ -9,13 +9,12 @@
         "address2": "Suite 924",
         "city": "Lake Ramona",
         "state": "ND",
-        "zip": "91830"
+        "zip": "91837"
       },
       "gender": "Male",
       "age": 28,
       "order_total": {
-        "amount": 87547,
-        "currency": "USD"
+        "amount": 87547
       }
     },
     {

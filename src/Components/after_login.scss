@@ -1,0 +1,24 @@
+div.after-login{
+    background-color: #f8b636;
+    div input.search-bar {
+        margin: 10px;
+        border: 1px solid black;
+        padding: 5px 10px;
+        font-size: 20px;
+        border-radius: 5px;
+        text-align: left;
+        font-family: cursive;
+    }
+}
+
+li.user-details {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: left;
+    font-family: cursive;
+    list-style: decimal-leading-zero;
+    ul.address-details li {
+        margin-left: 40px;
+    }
+}
