@@ -1,5 +1,6 @@
 export const getAllUsers = () => {
     return fetch('https://my-json-server.typicode.com/rachanavishwanath/myapp/users')
+    // return fetch('http://localhost:3000/users')
                 .then((res) => { 
                     return res.json(); 
                 })
@@ -8,6 +9,7 @@ export const getAllUsers = () => {
 
 export const getUser = (userId) => {
     return fetch(`https://my-json-server.typicode.com/rachanavishwanath/myapp/users/${userId}`)
+    // return fetch(`http://localhost:3000/users/${userId}`)
             .then((res) => { 
                 return res.json(); 
             })
@@ -22,7 +24,8 @@ export const editUser = (userId, data) => {
         },
         body: JSON.stringify(data)
     }
-    fetch(`https://my-json-server.typicode.com/rachanavishwanath/myapp/users/${userId}`, patchMethod)
+    return fetch(`https://my-json-server.typicode.com/rachanavishwanath/myapp/users/${userId}`, patchMethod)
+    // return fetch(`http://localhost:3000/users/${userId}`, patchMethod)
         .then(res => {
             return res.json()
         })
@@ -37,7 +40,8 @@ export const deleteUser = (userId) => {
             'Content-Type': 'application/json'
         },
     }
-    fetch(`https://my-json-server.typicode.com/rachanavishwanath/myapp/users/${userId}`, deleteMethod)
+    return fetch(`https://my-json-server.typicode.com/rachanavishwanath/myapp/users/${userId}`, deleteMethod)
+    // return fetch(`http://localhost:3000/users/${userId}`, deleteMethod)
         .then(res => res.json())
         .then(data => console.log(data))
         .catch(err => console.log(err))

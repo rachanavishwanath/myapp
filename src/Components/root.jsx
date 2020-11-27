@@ -12,11 +12,11 @@ const Root = () => {
     return (
     <div className="app-container">
         <h1 className="title">SnapCheck Inc Coding Challenge</h1>
-        <Switch>
+        {/* <Switch> */}
             <Protected exact path="/" component={AfterLogin}/>
             <Protected exact path="/users/:user_id" component={EditUser} />
             <UnProtected exact path="/login" component={Login}/>
-        </Switch>
+        {/* </Switch> */}
         <Footer/>
     </div>
     )
