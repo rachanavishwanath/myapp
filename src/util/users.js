@@ -24,7 +24,9 @@ export const editUser = (userId, data) => {
         },
         body: JSON.stringify(data)
     }
+    // changes aren't persistent between calls
     return fetch(`https://my-json-server.typicode.com/rachanavishwanath/myapp/users/${userId}`, patchMethod)
+    // changes are persistent between calls
     // return fetch(`http://localhost:3000/users/${userId}`, patchMethod)
         .then(res => {
             return res.json()
@@ -40,7 +42,9 @@ export const deleteUser = (userId) => {
             'Content-Type': 'application/json'
         },
     }
+    // changes aren't persistent between calls
     return fetch(`https://my-json-server.typicode.com/rachanavishwanath/myapp/users/${userId}`, deleteMethod)
+    // changes persistent between calls
     // return fetch(`http://localhost:3000/users/${userId}`, deleteMethod)
         .then(res => res.json())
         .then(data => console.log(data))

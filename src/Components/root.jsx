@@ -13,9 +13,9 @@ const Root = () => {
     <div className="app-container">
         <h1 className="title">SnapCheck Inc Coding Challenge</h1>
         {/* <Switch> */}
-            <Protected exact path="/" component={AfterLogin}/>
-            <Protected exact path="/users/:user_id" component={EditUser} />
-            <UnProtected exact path="/login" component={Login}/>
+        <UnProtected exact path="/login" component={Login}/>
+        <Protected exact path="/" component={AfterLogin}/>
+        <Protected exact path="/users/:user_id" component={EditUser} />
         {/* </Switch> */}
         <Footer/>
     </div>
