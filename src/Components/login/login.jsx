@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import Auth from '../auth';
 import AfterLogin from '../after_login';
 // import { useAuth0 } from "@auth0/auth0-react";
 import './login.scss';
-import Auth from '../auth';
+
 
 export default class Login extends React.Component {
     constructor(props) {
@@ -28,9 +29,12 @@ export default class Login extends React.Component {
     }
 
     login() {
-        Auth.authenticate(this.state.userName).then(() => {
-            this.props.history.push("/");
-        });
+        // Auth.authenticate(this.state.userName).then(authentication => {
+        //     debugger
+        //     this.props.history.push("/");
+        // });
+        Auth.authenticate(this.state.userName);
+        this.props.history.push("/");
     }
 
     render(){
