@@ -8,11 +8,17 @@ export default class SearchResult extends React.Component {
         }
     }
 
+    checkNameMatch(user, search){
+        let firstNameChecker = user.first_name.toLowerCase().includes(search.toLowerCase());
+        let lastNameChecker = user.last_name.toLowerCase().includes(search.toLowerCase());
+        return (firstNameChecker || lastNameChecker)
+    }
+
     render(){
         const {users, search, show} = this.props;
         const filteredUsers =  users.map(user => {
-            if (user.first_name.includes(search) || user.last_name.includes(search) || JSON.stringify(user.order_total.amount).includes(search)) {
-                return show(user)
+            if (this.checkNameMatch(user, search) || JSON.stringify(user.order_total.amount).includes(search)) {
+                return show(user);
             }
         })
         return (

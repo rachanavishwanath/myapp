@@ -11,6 +11,10 @@ div.after-login{
     }
 }
 
+div.after-login > div:last-of-type {
+    height: 100vh;
+}
+
 li.user-details {
     margin-left: 50px;
     margin-bottom: 20px;
