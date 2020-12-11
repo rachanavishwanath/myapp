@@ -93,25 +93,3 @@ export default class AfterLogin extends React.Component {
         )
     }
 }
-// export default (props) => {
-//     const [allUsers, setallUsers] = useState(null);
-//     useEffect(() => {
-//         fetchAllUsers();
-//         return function(){
-
-//         }
-//     })
-
-//     function fetchAllUsers() {
-//         getAllUsers().then((users) => {
-//             debugger
-//             setallUsers(users)
-//         })
-//     }
-//     if (users === null) return null;
-//     return (
-//         <div>
-//             <p>Users</p>
-//         </div>
-//     )
-// }

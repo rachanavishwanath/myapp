@@ -29,10 +29,6 @@ export default class Login extends React.Component {
     }
 
     login() {
-        // Auth.authenticate(this.state.userName).then(authentication => {
-        //     debugger
-        //     this.props.history.push("/");
-        // });
         Auth.authenticate(this.state.userName);
         this.props.history.push("/");
     }

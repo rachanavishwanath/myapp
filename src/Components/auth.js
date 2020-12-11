@@ -4,7 +4,6 @@ const Auth = {
         this.isAuthenticated = true;
         localStorage.setItem('username', userName);
         document.cookie = "yummy";
-        debugger
         // return this.isAuthenticated;
     },
     signout() {
